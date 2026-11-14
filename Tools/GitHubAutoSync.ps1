@@ -35,8 +35,18 @@ function Invoke-Git {
         [switch]$AllowFailure
     )
 
-    $output = & $GitExe -C $RepoPath @Arguments 2>&1
-    $exitCode = $LASTEXITCODE
+    # Git writes normal progress to stderr. Windows PowerShell can promote that
+    # stream to a terminating ErrorRecord when the script preference is Stop,
+    # so judge success only by Git's process exit code.
+    $oldPreference = $ErrorActionPreference
+    $ErrorActionPreference = 'Continue'
+    try {
+        $output = & $GitExe -C $RepoPath @Arguments 2>&1
+        $exitCode = $LASTEXITCODE
+    }
+    finally {
+        $ErrorActionPreference = $oldPreference
+    }
     $text = ($output | Out-String).Trim()
     if ($exitCode -ne 0 -and -not $AllowFailure) {
         throw "git $($Arguments -join ' ') failed ($exitCode): $text"
