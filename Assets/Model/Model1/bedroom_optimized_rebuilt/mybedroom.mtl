@@ -1,0 +1,453 @@
+# Blender 5.0.1 MTL File: 'myroom.blend'
+# www.blender.org
+
+newmtl tripo_material_0194b587-b14d-4c11-8cf2-789e3d44b48e
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd crescent_moon_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 crescent_moon_3d_model_normal.png
+
+newmtl tripo_material_0777ce2a-af01-4d04-b8eb-f820260ea526
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd mini_backpack_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 mini_backpack_3d_model_normal.png
+
+newmtl tripo_material_0e1ae994-4d4e-4580-9d3f-a5e1a5d1282e
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd blue_chalkboard_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 blue_chalkboard_3d_model_normal.png
+
+newmtl tripo_material_19af3bdb-95af-4a13-b6b9-07faa436b07b
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd soft_plush_bunny_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 soft_plush_bunny_3d_model_normal.png
+
+newmtl tripo_material_1a0ec9ff-6ce2-48ae-81a5-ab81b8749345
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd pink_hand_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 pink_hand_3d_model_normal.png
+
+newmtl tripo_material_1b32c689-cacc-4cec-9904-5e3140e2c572
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd teddy_bear_plush_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 teddy_bear_plush_3d_model_normal.png
+
+newmtl tripo_material_2359eec0-0d4b-4644-9379-811b158a9739
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd flower_petal_cookies_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 flower_petal_cookies_3d_model_normal.png
+
+newmtl tripo_material_25d2d3e4-a631-4c11-8d65-018715125849
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd cute_wooden_furniture_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 cute_wooden_furniture_3d_model_normal.png
+
+newmtl tripo_material_2d6f793e-0188-4574-9e72-519c7fca05c0
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd hedgehog_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 hedgehog_3d_model_normal.png
+
+newmtl tripo_material_36a8a047-313e-48d8-9aef-69d9ed2f586c
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd wooden_bed_3d_model_basecolor.jpg.001.jpg
+map_Bump -bm 1.000000 wooden_bed_3d_model_normal.png.001.png
+
+newmtl tripo_material_3e147672-f13b-4861-8111-33f3c79dbf29
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd wooden_chalkboard_easel_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 wooden_chalkboard_easel_3d_model_normal.png
+
+newmtl tripo_material_49167a84-923f-4b0c-a9d4-6b1a032c7e46
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd cream_picture_frame_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 cream_picture_frame_3d_model_normal.png
+
+newmtl tripo_material_4a42999b-dc28-414d-b5bd-2a83960a695c
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd hanging_potted_plant_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 hanging_potted_plant_3d_model_normal.png
+
+newmtl tripo_material_57460105-db4d-4ccc-aec3-b5cc29c765bf.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd orange_check_curtains_3d_model_basecolor.jpg.001.jpg
+map_Bump -bm 1.000000 orange_check_curtains_3d_model_normal.png.001.png
+
+newmtl tripo_material_601c3a74-6d36-45fc-af56-0ab887a244aa.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd wooden_floor_panel_3d_model_basecolor.jpg.001.jpg
+map_Bump -bm 1.000000 wooden_floor_panel_3d_model_normal.png.001.png
+
+newmtl tripo_material_625f95e4-4f0d-4f4c-9123-60c549b00ea4
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd wooden_chair_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 wooden_chair_3d_model_normal.png
+
+newmtl tripo_material_69d8db18-eac3-4994-8dab-a2e5a9f823ea
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd hot_air_balloon_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 hot_air_balloon_3d_model_normal.png
+
+newmtl tripo_material_74ad8c3c-7e38-466e-9f8d-9d16c4c41c50
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd world_map_poster_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 world_map_poster_3d_model_normal.png
+
+newmtl tripo_material_7d4a922b-8525-454f-bf67-9c86ae9b9b77
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd wooden_toy_shelf_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 wooden_toy_shelf_3d_model_normal.png
+
+newmtl tripo_material_7e29da33-eef3-435b-98a1-805ae117b0ea
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd plush_toy_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 plush_toy_3d_model_normal.png
+
+newmtl tripo_material_7e9be645-6d50-4949-b737-08d2fd493368
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd round_rug_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 round_rug_3d_model_normal.png
+
+newmtl tripo_material_83f07136-ce14-4066-a965-ea713663e1d2
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd star_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 star_3d_model_normal.png
+
+newmtl tripo_material_94b5f864-ba0d-4806-a737-54096146a4b1
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd plush_teddy_bear_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 plush_teddy_bear_3d_model_normal.png
+
+newmtl tripo_material_99625495-514a-49c0-81c9-d1ee075e39e3
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd wooden_toy_train_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 wooden_toy_train_3d_model_normal.png
+
+newmtl tripo_material_a1e9777e-58d5-416f-be30-f41a93a2c54b
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd wooden_desk_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 wooden_desk_3d_model_normal.png
+
+newmtl tripo_material_a79ba3aa-f055-4b7c-9e80-c2bc81999e0d
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd blue_floral_rug_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 blue_floral_rug_3d_model_normal.png
+
+newmtl tripo_material_b15058cb-e420-4163-b872-395d913ef30e
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd cartoon_apple_sign_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 cartoon_apple_sign_3d_model_normal.png
+
+newmtl tripo_material_b16cdd03-1a98-44a0-885b-4c9fcd226063
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd teddy_bear_3d_model_basecolor.jpg.001.jpg
+map_Bump -bm 1.000000 teddy_bear_3d_model_normal.png.001.png
+
+newmtl tripo_material_b750734e-7c38-4708-a410-b205449d4211
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd cute_plush_toy_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 cute_plush_toy_3d_model_normal.png
+
+newmtl tripo_material_b9a2ce62-bee7-4c64-80c5-e112c40e2428
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd rug_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 rug_3d_model_normal.png
+
+newmtl tripo_material_c2983ad5-4acc-4d9b-a523-a1dd94d88959
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd building_facade_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 building_facade_3d_model_normal.png
+
+newmtl tripo_material_d07eedf3-5634-44c4-8838-358e31ab9a20
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd cloud_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 cloud_3d_model_normal.png
+
+newmtl tripo_material_d61a20e8-9c54-4a2b-9083-fb478ada943f
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd yellow_hand_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 yellow_hand_3d_model_normal.png
+
+newmtl tripo_material_d86d516d-d45d-4f3c-a2c3-bed7e92696cd
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd wooden_toy_wagon_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 wooden_toy_wagon_3d_model_normal.png
+
+newmtl tripo_material_db6c846a-2e94-4f16-9e0c-add3cf6bfc4e
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd bunting_banner_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 bunting_banner_3d_model_normal.png
+
+newmtl tripo_material_dd25509d-65e4-4d7a-af58-fc5fdaf75f05
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd wooden_shelf_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 wooden_shelf_3d_model_normal.png
+
+newmtl tripo_material_e02673d2-db50-4e62-9162-ac7083188af8
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd sunny_teepee_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 sunny_teepee_3d_model_normal.png
+
+newmtl tripo_material_f27f1813-5505-4526-a763-39d452e56f9d
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd cartoon_house_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 cartoon_house_3d_model_normal.png
+
+newmtl tripo_material_f31e9a42-4a87-43e8-a30a-440ac499a19a
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd teddy_bear_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 teddy_bear_3d_model_normal.png
+
+newmtl tripo_material_f960b697-f041-4743-bea7-28d244d14873
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd wooden_stool_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 wooden_stool_3d_model_normal.png
+
+newmtl tripo_material_fd23ed4b-0020-4992-a1e2-16135b8aca48
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd wooden_cubby_storage_3d_model_basecolor.jpg
+map_Bump -bm 1.000000 wooden_cubby_storage_3d_model_normal.png

@@ -1,0 +1,43 @@
+{
+    "generatedUtc": "2026-11-13T07:59:17.1561336Z",
+    "success": true,
+    "activeBuildTarget": "Android",
+    "scriptingBackend": "IL2CPP",
+    "androidArchitectures": "ARM64",
+    "colorSpace": "Linear",
+    "android": {
+        "target": "Android",
+        "openXRLoaderEnabled": true,
+        "enabledFeatures": [
+            "HandTracking Android",
+            "MetaHandTrackingAim Android",
+            "MetaQuestFeature Android",
+            "MetaQuestTouchPlusControllerProfile Android",
+            "MetaQuestTouchProControllerProfile Android",
+            "MetaXRFeature Android",
+            "MetaXRSubsampledLayout Android",
+            "OculusTouchControllerProfile Android",
+            "OculusTouchControllerProximityProfile Android"
+        ]
+    },
+    "standalone": {
+        "target": "Standalone",
+        "openXRLoaderEnabled": true,
+        "enabledFeatures": [
+            "HandTracking Standalone",
+            "MetaHandTrackingAim Standalone",
+            "MetaQuestTouchPlusControllerProfile Standalone",
+            "MetaQuestTouchProControllerProfile Standalone",
+            "MetaXRFeature Standalone",
+            "MetaXRFoveationFeature Standalone",
+            "OculusTouchControllerProfile Standalone",
+            "OculusTouchControllerProximityProfile Standalone"
+        ]
+    },
+    "messages": [
+        "Android: IL2CPP, ARM64, API 32 minimum/API 34 target, Linear color space, GPU skinning enabled.",
+        "Android: OpenXR loader and Meta controller/hand-tracking baseline enabled.",
+        "Standalone: OpenXR loader and Meta controller/hand-tracking baseline enabled."
+    ],
+    "error": ""
+}
