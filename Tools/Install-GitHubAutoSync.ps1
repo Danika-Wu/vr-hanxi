@@ -7,8 +7,12 @@ param(
 $ErrorActionPreference = 'Stop'
 $RepoPath = [System.IO.Path]::GetFullPath($RepoPath)
 $syncScript = Join-Path $RepoPath 'Tools\GitHubAutoSync.ps1'
+$hiddenLauncher = Join-Path $RepoPath 'Tools\GitHubAutoSyncHidden.vbs'
 if (-not (Test-Path -LiteralPath $syncScript)) {
     throw "Sync script not found: $syncScript"
+}
+if (-not (Test-Path -LiteralPath $hiddenLauncher)) {
+    throw "Hidden launcher not found: $hiddenLauncher"
 }
 
 $gitCandidates = @(
@@ -30,8 +34,9 @@ if ($LASTEXITCODE -eq 0 -and $origin) {
 
 $repoName = Split-Path -Leaf $RepoPath
 $taskName = "GitHub Auto Sync - $repoName"
-$arguments = "-NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -File `"$syncScript`" -RepoPath `"$RepoPath`""
-$action = New-ScheduledTaskAction -Execute 'powershell.exe' -Argument $arguments -WorkingDirectory $RepoPath
+$wscript = Join-Path $env:SystemRoot 'System32\wscript.exe'
+$arguments = "`"$hiddenLauncher`""
+$action = New-ScheduledTaskAction -Execute $wscript -Argument $arguments -WorkingDirectory $RepoPath
 $trigger = New-ScheduledTaskTrigger -Once -At ((Get-Date).AddMinutes(1)) `
     -RepetitionInterval (New-TimeSpan -Minutes $IntervalMinutes) `
     -RepetitionDuration (New-TimeSpan -Days 3650)
@@ -43,6 +48,8 @@ $principal = New-ScheduledTaskPrincipal -UserId ([System.Security.Principal.Wind
 Register-ScheduledTask -TaskName $taskName -Action $action -Trigger $trigger `
     -Settings $settings -Principal $principal -Force | Out-Null
 
-Write-Output "Installed scheduled task: $taskName"
+Write-Output "Installed hidden scheduled task: $taskName"
 Write-Output "Interval: every $IntervalMinutes minute(s) while this user is logged in."
+Write-Output "Launcher: $hiddenLauncher"
 Write-Output "Log: $(Join-Path $RepoPath '.github-sync\sync.log')"
+
