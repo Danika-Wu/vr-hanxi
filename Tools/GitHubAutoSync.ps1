@@ -11,6 +11,18 @@ $stateDir = Join-Path $RepoPath '.github-sync'
 $logPath = Join-Path $stateDir 'sync.log'
 New-Item -ItemType Directory -Path $stateDir -Force | Out-Null
 
+$gitCandidates = @(
+    (Get-Command git.exe -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source -First 1),
+    (Join-Path $env:ProgramFiles 'Git\cmd\git.exe'),
+    (Join-Path $env:LOCALAPPDATA 'Programs\Git\cmd\git.exe'),
+    (Join-Path $env:USERPROFILE '.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe')
+) | Where-Object { $_ -and (Test-Path -LiteralPath $_) }
+
+$GitExe = $gitCandidates | Select-Object -First 1
+if (-not $GitExe) {
+    throw 'git.exe was not found. Install Git for Windows or update GitHubAutoSync.ps1 with its path.'
+}
+
 function Write-SyncLog {
     param([string]$Message)
     $line = '{0:u} {1}' -f (Get-Date), $Message
@@ -23,7 +35,7 @@ function Invoke-Git {
         [switch]$AllowFailure
     )
 
-    $output = & git -C $RepoPath @Arguments 2>&1
+    $output = & $GitExe -C $RepoPath @Arguments 2>&1
     $exitCode = $LASTEXITCODE
     $text = ($output | Out-String).Trim()
     if ($exitCode -ne 0 -and -not $AllowFailure) {
@@ -33,6 +45,35 @@ function Invoke-Git {
         ExitCode = $exitCode
         Output = $text
     }
+}
+
+function Invoke-GitNetwork {
+    param(
+        [Parameter(Mandatory = $true)][string[]]$Arguments,
+        [ValidateRange(1, 5)][int]$Attempts = 3,
+        [switch]$AllowFailure
+    )
+
+    $lastResult = $null
+    for ($attempt = 1; $attempt -le $Attempts; $attempt++) {
+        $lastResult = Invoke-Git -Arguments $Arguments -AllowFailure
+        if ($lastResult.ExitCode -eq 0) {
+            return $lastResult
+        }
+
+        $transient = $lastResult.Output -match 'unable to access|Could not connect|Connection reset|TLS|SSL|timed out|remote end hung up|RPC failed'
+        if (-not $transient -or $attempt -eq $Attempts) {
+            break
+        }
+
+        Write-SyncLog "Network attempt $attempt/$Attempts failed; retrying."
+        Start-Sleep -Seconds (5 * $attempt)
+    }
+
+    if (-not $AllowFailure) {
+        throw "git $($Arguments -join ' ') failed after $Attempts attempt(s): $($lastResult.Output)"
+    }
+    return $lastResult
 }
 
 function Test-UnityOpenForProject {
@@ -108,7 +149,7 @@ try {
         }
     }
 
-    Invoke-Git -Arguments @('fetch', '--prune', 'origin') | Out-Null
+    Invoke-GitNetwork -Arguments @('fetch', '--prune', 'origin') | Out-Null
 
     if (Get-WorkingState) {
         Invoke-Git -Arguments @('add', '--all') | Out-Null
@@ -143,7 +184,7 @@ try {
         }
     }
 
-    $push = Invoke-Git -Arguments @('push', '--set-upstream', 'origin', $branch) -AllowFailure
+    $push = Invoke-GitNetwork -Arguments @('push', '--set-upstream', 'origin', $branch) -AllowFailure
     if ($push.ExitCode -ne 0) {
         Write-SyncLog "Push failed: $($push.Output)"
         exit 4
@@ -160,4 +201,3 @@ finally {
     $mutex.ReleaseMutex() | Out-Null
     $mutex.Dispose()
 }
-
