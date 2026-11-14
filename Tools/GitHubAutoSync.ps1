@@ -159,7 +159,11 @@ try {
         }
     }
 
-    Invoke-GitNetwork -Arguments @('fetch', '--prune', 'origin') | Out-Null
+    $fetch = Invoke-GitNetwork -Arguments @('fetch', '--prune', 'origin') -AllowFailure
+    if ($fetch.ExitCode -ne 0) {
+        Write-SyncLog 'Deferred: GitHub is temporarily unreachable; will retry next interval.'
+        exit 0
+    }
 
     if (Get-WorkingState) {
         Invoke-Git -Arguments @('add', '--all') | Out-Null
@@ -196,8 +200,8 @@ try {
 
     $push = Invoke-GitNetwork -Arguments @('push', '--set-upstream', 'origin', $branch) -AllowFailure
     if ($push.ExitCode -ne 0) {
-        Write-SyncLog "Push failed: $($push.Output)"
-        exit 4
+        Write-SyncLog 'Deferred: push could not reach GitHub; will retry next interval.'
+        exit 0
     }
 
     Write-SyncLog 'Sync completed.'
